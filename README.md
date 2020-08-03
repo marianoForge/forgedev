@@ -17,21 +17,12 @@ Create a directory for your new project, clone this repository, install the requ
 
 ```
 mkdir forgeWebSite && cd forgeWebSite
+
 clone https://github.com/forgedevco/website.git
+
 npm i
+
 npm run dev
-```
-
-### Complete setup
-
-This is the complete setup
-
-#### Create your package.json and customize it
-
-```
-
-npm init
-
 ```
 
 ### Commands
