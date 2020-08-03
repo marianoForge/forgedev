@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 209 123">
+  <defs>
+    <path id="a" d="M0 0h154.705v97.337H0z"/>
+    <path id="e" d="M.166 3.405s2.116 1.892 8.107 2.392h186.454s4.97-.335 8.194-2.31H4.864L.166 3.406z"/>
+    <path id="g" d="M87.239.116s.023 2.124 1.642 3.14h25.171s1.385-.661 1.693-3.14H87.647"/>
+    <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#2C2C2C"/>
+    </linearGradient>
+    <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#5771F3"/>
+      <stop offset="100%" stop-color="#36458E"/>
+    </linearGradient>
+    <filter id="d" width="106.9%" height="685.3%" x="-3.5%" y="-209%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+    </filter>
+    <filter id="h" width="103.5%" height="131.9%" x="-1.8%" y="-15.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation=".5"/>
+      <feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.301441866 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#5F7AFF" d="M27.994.28A5.994 5.994 0 0022 6.274v104.768h165V6.274A6 6 0 00181.006.28H27.994z"/>
+    <path stroke="#5F7AFF" stroke-width="2" d="M23 112h163V5.996A5 5 0 00181.006 1H27.994A4.993 4.993 0 0023 5.996V112z"/>
+    <g transform="translate(27.287 7.272)">
+      <mask id="b" fill="#fff">
+        <use xlink:href="#a"/>
+      </mask>
+      <use fill="#425BD0" xlink:href="#a"/>
+      <text fill="#899EFF" font-family="CeraPro-Black, Cera Pro" font-size="24" font-weight="700" mask="url(#b)">
+        <tspan x="37.313" y="54.728">WWW.</tspan>
+      </text>
+    </g>
+    <g transform="translate(103 3)">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="url(#c)"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="#103470"/>
+    </g>
+    <g>
+      <g transform="translate(3 111)">
+        <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+        <use fill="url(#f)" xlink:href="#e"/>
+      </g>
+      <path fill="#5771F3" d="M3.279 111H206v3.5H3.279z"/>
+      <g transform="translate(3 111)">
+        <use fill="#4F66D9" xlink:href="#g"/>
+        <use fill="#000" filter="url(#h)" xlink:href="#g"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=block");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+// Body
+$body-bg: #1D50B9;
+
+// Spacers
+$spacer: 1rem;
+$spacers: (6: $spacer * 4.5, 7: $spacer * 6, 8: $spacer * 7.5, 9: $spacer * 9, 10: $spacer * 10.5);
+
+// Typography
+$font-family-sans-serif: "Lato", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Colors
+$primary: #0272B1;
+$secondary: #070f44;
+$thirdary: #0496FF;
+
+// Page Colors
+$gray-dark: #1F1F23;
+$gray-light: #F1F1F1;
