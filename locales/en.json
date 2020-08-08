@@ -1,0 +1,21 @@
+{
+  "links": {
+    "index": "Home",
+    "clients": "Clients",
+    "solutions": "Solutions",
+    "services": "Services",
+    "about": "About Us",
+    "quote": "Request a Quote"
+  },
+  "index": {
+    "title": "Forge English"
+  },
+  "error": {
+    "404": "D'oh! 404",
+    "404-title": "Awww... Dont Cry!",
+    "404-description": "You're lost...",
+    "all-error": "500 Error",
+    "all-error-title": "Sorry... It's not you. It's me.",
+    "error-btn": "Go to the Homepage"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "links": {
+    "index": "Inicio",
+    "clients": "Clientes",
+    "solutions": "Soluciones",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "quote": "Presupuestos!"
+  },
+  "index": {
+    "title": "Forge Español"
+  },
+  "error": {
+    "404": "Upss! 404",
+    "404-title": "Ahhhh... No llores!",
+    "404-description": "Te has perdido...",
+    "all-error": "500 Error",
+    "all-error-title": "Perdón... No fuiste vos, fue mi culpa...",
+    "error-btn": "Volver a la Home"
+  }
+}
