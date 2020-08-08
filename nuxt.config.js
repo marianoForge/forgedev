@@ -41,4 +41,5 @@ export default {
   },
   css: ["~assets/scss/styles.scss"],
   modules: ["@nuxtjs/svg"],
+  buildModules: ["@nuxtjs/tailwindcss"],
 };

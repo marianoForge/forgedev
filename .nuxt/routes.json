@@ -3,14 +3,12 @@
     "name": "index",
     "path": "/",
     "component": "/Users/fernandopoli/Google Drive/Forge/webiste/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_7d11b86b"
+    "chunkName": "pages/index"
   },
   {
     "name": "lang",
     "path": "/:lang",
     "component": "/Users/fernandopoli/Google Drive/Forge/webiste/pages/_lang/index.vue",
-    "chunkName": "pages/_lang/index",
-    "_name": "_b1b1b22e"
+    "chunkName": "pages/_lang/index"
   }
 ]
