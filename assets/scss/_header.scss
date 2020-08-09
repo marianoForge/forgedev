@@ -1,7 +1,20 @@
 header {
+  background-color: #1d50b9d6;
+  backdrop-filter: blur(2px);
+
+  @apply fixed top-0 left-0 w-full;
+
   .forge-logo {
     width: 100%;
     max-width: 249px;
+  }
+
+  .header--menu__wrapper {
+    display: none;
+
+    &.open {
+      display: flex;
+    }
   }
 
   .icn-hamb {
@@ -159,6 +172,18 @@ header {
           left: 50%;
           border-radius: 0 9px 9px 0;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    .header--menu__wrapper {
+      display: flex;
+
+      &.open {
+        display: flex;
       }
     }
   }

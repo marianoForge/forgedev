@@ -1,7 +1,7 @@
 <template>
-  <header class="navbar">
-    <nav class="flex items-center justify-between flex-wrap p-6">
-      <div class="flex items-center flex-shrink-0 mr-6">
+  <header class="navbar p-3">
+    <nav class="flex items-center justify-between flex-wrap px-3">
+      <div class="flex items-center flex-shrink-0 mr-6 ">
         <logo class="animation-traslate" />
       </div>
       <div class="block lg:hidden">
@@ -23,7 +23,7 @@
         <button
           @click="toggleShow"
           class="icn-hamb"
-          :class="{ open: !isShowing }"
+          :class="{ open: isShowing }"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 16">
             <defs />
@@ -37,43 +37,30 @@
       </div>
       <transition name="menu">
         <div
-          class="w-full flex-grow lg:block lg:flex lg:items-center lg:w-auto"
-          :class="{ open: !isShowing }"
+          class="w-full flex-grow lg:block lg:flex lg:items-center lg:w-auto header--menu__wrapper"
+          :class="{ open: isShowing }"
         >
-          <div class="text-sm lg:flex-grow lg:text-right">
-            <a
-              href="#index"
-              class="block mt-4 text-center lg:inline-block text-white hover:text-white"
-            >
+          <div
+            class="text-sm w-full lg:flex-grow lg:text-right header--menu_items lg:space-x-16"
+          >
+            <a href="#index" class="block text-center mt-4 lg:inline-block">
               {{ $t("links.index") }}
             </a>
-            <a
-              href="#clients"
-              class="block mt-4 text-center lg:inline-block text-white hover:text-white lg:ml-8 xl:ml-16"
-            >
+            <a href="#clients" class="block text-center mt-4 lg:inline-block">
               {{ $t("links.clients") }}
             </a>
-            <a
-              href="#solutions"
-              class="block mt-4 text-center lg:inline-block text-white hover:text-white lg:ml-8 xl:ml-16"
-            >
+            <a href="#solutions" class="block text-center mt-4 lg:inline-block">
               {{ $t("links.solutions") }}
             </a>
-            <a
-              href="#services"
-              class="block mt-4 text-center lg:inline-block text-white hover:text-white lg:ml-8 xl:ml-16"
-            >
+            <a href="#services" class="block text-center mt-4 lg:inline-block">
               {{ $t("links.services") }}
             </a>
-            <a
-              href="#about-us"
-              class="block mt-4 text-center lg:inline-block text-white hover:text-white lg:ml-8 xl:ml-16"
-            >
+            <a href="#about-us" class="block text-center mt-4 lg:inline-block">
               {{ $t("links.about") }}
             </a>
             <a
               href="#quote"
-              class="block mt-4 text-center lg:inline-block btn btn-orange btn-shadow lg:ml-8 xl:ml-16"
+              class="block mt-4 text-center lg:inline-block btn btn-orange btn-shadow"
             >
               {{ $t("links.quote") }}
             </a>
