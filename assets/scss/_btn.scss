@@ -1,1 +1,24 @@
+// Btn orange
+.btn {
+  @apply font-bold py-3 px-6 rounded-full;
 
+  letter-spacing: -0.45px;
+
+  @apply font-bold transition duration-200 ease-in-out;
+
+  &.btn-orange {
+    background-color: $orange;
+
+    @apply text-white;
+  }
+
+  &.btn-shadow {
+    box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.5),
+      -2px -5px 10px 0 rgba(146, 182, 255, 0.7);
+
+    &:hover {
+      box-shadow: 2px 2px 5px 0 rgba(146, 182, 255, 0.5),
+        inset 0px 0px 15px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+}

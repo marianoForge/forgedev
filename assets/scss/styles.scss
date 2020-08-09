@@ -1,13 +1,11 @@
 // TailwindCss
 @tailwind base;
 
-@tailwind components;
-
-@tailwind utilities;
-
 // Forge Styles
 @import "variables";
 @import "mixins";
 @import "btn";
 @import "general";
 @import "footer";
+@import "header";
+@import "social-networks";

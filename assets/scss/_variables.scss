@@ -1,13 +1,17 @@
-// Fonts
-
-// Body
-$body-bg: #1d50b9;
-
 // Colors
-$primary: #0272b1;
-$secondary: #070f44;
-$thirdary: #0496ff;
+$primary: #1d50b9;
+$orange: #f47d1e;
+$dark-orange: #ff7100;
+$yellow: #f5c243;
+$red: #dc2222;
+$light-green: #1bcac4;
+$blue: #5572fc;
+$green: #3cc979;
 
 // Page Colors
-$gray-dark: #1f1f23;
+$dark-gray: #161c24;
 $gray-light: #f1f1f1;
+$circle-gray: #2b2b2c;
+
+// Body
+$body-bg: $primary;

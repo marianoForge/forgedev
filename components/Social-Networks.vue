@@ -1,6 +1,8 @@
 <template>
-  <ul class="social-networks">
-    <li>
+  <ul
+    class="social-networks p-0 m-0 flex items-center justify-center flex-wrap"
+  >
+    <li class="mx-2">
       <a href="https://www.linkedin.com/in/fernandoandrespoli/" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <path
@@ -9,7 +11,7 @@
         </svg>
       </a>
     </li>
-    <li>
+    <li class="mx-2">
       <a href="#" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <path
@@ -18,7 +20,7 @@
         </svg>
       </a>
     </li>
-    <li>
+    <li class="mx-2">
       <a href="#" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <path

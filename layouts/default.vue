@@ -1,19 +1,23 @@
 <template>
   <div class="main-wrapper">
-    <topnav />
+    <!-- Header-->
+    <Header />
+    <!-- End Header-->
     <Nuxt />
-    <Socialnetworks />
+    <!-- Footer-->
+    <Footer />
+    <!-- End Footer-->
   </div>
 </template>
 
 <script>
-import Topnav from "~/components/Top-Nav.vue";
-import Socialnetworks from "~/components/Social-Networks.vue";
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
-    Topnav,
-    Socialnetworks,
+    Header,
+    Footer,
   },
 };
 </script>

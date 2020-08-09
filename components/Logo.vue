@@ -4,6 +4,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 249 67"
+      class="forge-logo"
     >
       <defs>
         <path id="a" d="M.283.247h17.69V22H.283z" />
@@ -51,7 +52,7 @@
   </NuxtLink>
 </template>
 <style>
-.NuxtLogo {
+.forge-logo {
   animation: 1s appear;
 }
 
