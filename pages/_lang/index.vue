@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4">
     <span v-html="$t('index.title')"></span>
   </div>
 </template>

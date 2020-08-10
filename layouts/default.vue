@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wrapper pt-20">
+  <div class="main-wrapper pt-24">
     <!-- Header-->
     <Header />
     <!-- End Header-->

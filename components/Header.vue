@@ -7,7 +7,7 @@
       <div class="block lg:hidden">
         <button
           @click="toggleShow"
-          class="navbar-toggle flex"
+          class="navbar-toggle flex outline-none"
           :class="{ collapsed: !isShowing }"
         >
           <span class="icon-wrapper">
@@ -17,22 +17,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </span>
-        </button>
-      </div>
-      <div class="block lg:hidden">
-        <button
-          @click="toggleShow"
-          class="icn-hamb"
-          :class="{ open: isShowing }"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 16">
-            <defs />
-            <path
-              fill="#FFF"
-              fill-rule="evenodd"
-              d="M 10.5 12.9 L 10.5 15.6 L 0.7 15.6 L 0.7 12.9 L 10.5 12.9 Z M 20.3 6.7 L 20.3 9.4 L 0.7 9.4 L 0.7 6.7 L 20.3 6.7 Z M 20.3 0.4 L 20.3 3.1 L 0.7 3.1 L 0.7 0.4 L 20.3 0.4 Z"
-            />
-          </svg>
         </button>
       </div>
       <transition name="menu">
