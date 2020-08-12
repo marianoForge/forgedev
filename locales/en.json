@@ -8,7 +8,9 @@
     "quote": "Request a Quote"
   },
   "index": {
-    "title": "Forge English"
+    "title": "Forge English",
+    "title-clients": "We Create Values for this amazing Brands",
+    "slider-01": "We Create Solutions."
   },
   "error": {
     "404": "D'oh! 404",

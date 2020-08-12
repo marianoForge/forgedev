@@ -1,6 +1,8 @@
 // TailwindCss
 @tailwind base;
 
+@import url("aos/dist/aos.css");
+
 // Forge Styles
 @import "variables";
 @import "mixins";

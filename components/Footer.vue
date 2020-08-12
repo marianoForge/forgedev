@@ -1,8 +1,10 @@
 <template>
-  <div class="container mx-auto">
-    <!-- Social networks -->
-    <social-networks />
-  </div>
+  <footer class="bg-white pt-20 pb-20">
+    <div class="container mx-auto">
+      <!-- Social networks -->
+      <social-networks />
+    </div>
+  </footer>
 </template>
 
 <script>
