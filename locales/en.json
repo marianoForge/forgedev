@@ -7,6 +7,15 @@
     "about": "About Us",
     "quote": "Request a Quote"
   },
+  "form": {
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourPhone": "Your Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "error": "Track your favorite shows automatically without switching between apps.",
+    "submit": "Submit"
+  },
   "index": {
     "title": "Forge English",
     "title-clients": "We Create Values for this amazing Brands",

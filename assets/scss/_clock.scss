@@ -1,0 +1,74 @@
+/*TIME*/
+.time--wrapper {
+    background-image: linear-gradient(138deg, #1B49A6 7%, #1648AF 94%);
+    box-shadow: 5px 10px 22px 0 rgba(0, 0, 0, 0.3), -5px -5px 10px 0 #2267F5, inset 0 0 22px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    width: 160px;
+    height: 160px;
+
+    @apply flex justify-center items-center relative;
+
+    &:before {
+        content: "";
+
+        @apply absolute bg-white rounded-full z-10;
+
+        width: 14px;
+        height: 14px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .hour,
+    .min,
+    .sec {
+        @apply absolute h-full w-full flex justify-center items-center;
+
+        &:before {
+            content: "";
+            width: 4px;
+            background-color: $light-white;
+
+            @apply rounded-full;
+
+            transform: translateY(-50%);
+        }
+    }
+
+    .hour {
+        &:before {
+            height: 39px;
+        }
+    }
+
+    .min {
+        &:before {
+            height: 66px;
+        }
+    }
+
+    .sec {
+        &:before {
+            height: 50px;
+        }
+
+        &.red {
+            translate: rotate(60deg);
+
+            &:before {
+                background-color: $red;
+            }
+        }
+
+        &.orange {
+            &:before {
+                background-color: $dark-orange;
+            }
+        }
+
+        &.yellow {
+            &:before {
+                background-color: $dark-yellow;
+            }
+        }
+    }
+}

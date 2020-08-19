@@ -1,4 +1,58 @@
 /*MAIN FEATURED WRAPPER*/
 body {
-  background-color: $body-bg;
+    background-color: $body-bg;
+}
+
+.shadow-svg {
+    -webkit-filter: drop-shadow(10px 30px 40px rgba(0, 0, 0, 1));
+    filter: drop-shadow(10px 30px 40px rgba(0, 0, 0, 1));
+}
+
+/*SERVICES*/
+.service--wrapper {
+    @apply relative;
+
+    /*Colors*/
+    .circle {
+        @apply rounded-full z-0 absolute;
+
+        width: 100%;
+        padding-top: 4 / 4 * 100%;
+
+        &.circle-yellow {
+            background-color: $dark-yellow;
+        }
+
+        &.circle-blue {
+            background-color: $blue;
+        }
+
+        &.circle-green {
+            background-color: $green;
+        }
+
+        &.circle-light-green {
+            background-color: $light-green;
+        }
+
+        &.circle-orange {
+            background-color: $dark-orange;
+        }
+
+        &.circle-red {
+            background-color: $red;
+        }
+    }
+
+    .service--info__wrapper {
+        @apply z-10;
+
+        .service--info__off {
+            display: none;
+        }
+
+        .image--service {}
+
+        .service--info__on {}
+    }
 }

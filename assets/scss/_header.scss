@@ -1,144 +1,141 @@
 header {
-  background-color: #1d50b9d6;
-  backdrop-filter: blur(2px);
+    background-color: #1d50b9d6;
+    backdrop-filter: blur(2px);
 
-  @apply fixed top-0 left-0 w-full;
+    @apply fixed top-0 left-0 w-full z-50;
 
-  .forge-logo {
-    width: 100%;
-    max-width: 249px;
-  }
-
-  .header--menu__wrapper {
-    display: none;
-
-    &.open {
-      display: flex;
-    }
-  }
-
-  // Animation Hamb
-  .navbar-toggle {
-    border: 0 none;
-    background: transparent;
-    position: relative;
-    background: $light-green;
-    box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.5),
-      -2px -5px 10px 0 rgba(146, 182, 255, 0.7),
-      inset 0px 0px 0px 0 rgba(0, 0, 0, 0);
-
-    width: 40px;
-    height: 40px;
-
-    @apply rounded-full flex items-center justify-center outline-none;
-
-    .icon-wrapper {
-      width: 19px;
-      height: 15px;
-      padding: 0px;
-      position: relative;
+    .forge-logo {
+        width: 100%;
+        max-width: 249px;
     }
 
-    .icon-bar {
-      display: block;
-      position: absolute;
-      height: 2.4px;
-      width: 50%;
-      background-color: white;
-      opacity: 1;
-      margin: 0px;
+    .header--menu__wrapper {
+        display: none;
 
-      @include transition(all, 200ms, ease);
-
-      + .icon-bar {
-        margin-top: 0px;
-      }
-
-      &:nth-child(1) {
-        left: 2px;
-        top: 4px;
-      }
-
-      &:nth-child(2) {
-        left: calc(50% - 2px);
-        top: 4px;
-      }
-
-      &:nth-child(1),
-      &:nth-child(4) {
-        @include rotate(45deg);
-      }
-
-      &:nth-child(2),
-      &:nth-child(5) {
-        @include rotate(-45deg);
-      }
-
-      &:nth-child(3) {
-        left: -60%;
-        opacity: 0;
-      }
-
-      &:nth-child(4) {
-        left: calc(50% - 2px);
-        top: 10px;
-      }
-
-      &:nth-child(5) {
-        left: 2px;
-        top: 10px;
-      }
+        &.open {
+            display: flex;
+        }
     }
 
-    &.collapsed {
-      .icon-bar {
-        background-color: white;
+    // Animation Hamb
+    .navbar-toggle {
+        border: 0 none;
+        background: transparent;
+        position: relative;
+        background: $light-green;
+        box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.5), -2px -5px 10px 0 rgba(146, 182, 255, 0.7), inset 0px 0px 0px 0 rgba(0, 0, 0, 0);
+        width: 40px;
+        height: 40px;
 
-        &:nth-child(1),
-        &:nth-child(2) {
-          top: 1px;
+        @apply rounded-full flex items-center justify-center outline-none;
 
-          @include rotate(0deg);
+        .icon-wrapper {
+            width: 19px;
+            height: 15px;
+            padding: 0px;
+            position: relative;
         }
 
-        &:nth-child(3),
-        &:nth-child(4) {
-          top: 7px;
+        .icon-bar {
+            display: block;
+            position: absolute;
+            height: 2.4px;
+            width: 50%;
+            background-color: white;
+            opacity: 1;
+            margin: 0px;
 
-          @include rotate(0deg);
+            @include transition(all, 200ms, ease);
 
-          opacity: 1;
+            + .icon-bar {
+                margin-top: 0px;
+            }
+
+            &:nth-child(1) {
+                left: 2px;
+                top: 4px;
+            }
+
+            &:nth-child(2) {
+                left: calc(50% - 2px);
+                top: 4px;
+            }
+
+            &:nth-child(1),
+            &:nth-child(4) {
+                @include rotate(45deg);
+            }
+
+            &:nth-child(2),
+            &:nth-child(5) {
+                @include rotate(-45deg);
+            }
+
+            &:nth-child(3) {
+                left: -60%;
+                opacity: 0;
+            }
+
+            &:nth-child(4) {
+                left: calc(50% - 2px);
+                top: 10px;
+            }
+
+            &:nth-child(5) {
+                left: 2px;
+                top: 10px;
+            }
         }
 
-        &:nth-child(5),
-        &:nth-child(6) {
-          top: 13px;
+        &.collapsed {
+            .icon-bar {
+                background-color: white;
 
-          @include rotate(0deg);
-        }
+                &:nth-child(1),
+                &:nth-child(2) {
+                    top: 1px;
 
-        &:nth-child(odd) {
-          left: 0px;
-          border-radius: 9px 0 0 9px;
-        }
+                    @include rotate(0deg);
+                }
 
-        &:nth-child(even) {
-          left: 50%;
-          border-radius: 0 9px 9px 0;
+                &:nth-child(3),
+                &:nth-child(4) {
+                    top: 7px;
+
+                    @include rotate(0deg);
+
+                    opacity: 1;
+                }
+
+                &:nth-child(5),
+                &:nth-child(6) {
+                    top: 13px;
+
+                    @include rotate(0deg);
+                }
+
+                &:nth-child(odd) {
+                    left: 0px;
+                    border-radius: 9px 0 0 9px;
+                }
+
+                &:nth-child(even) {
+                    left: 50%;
+                    border-radius: 0 9px 9px 0;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (min-width: 1024px) {
-  header {
-    .header--menu__wrapper {
-      display: flex;
+    header {
+        .header--menu__wrapper {
+            display: flex;
 
-      &.open {
-        display: flex;
-      }
+            &.open {
+                display: flex;
+            }
+        }
     }
-  }
 }
