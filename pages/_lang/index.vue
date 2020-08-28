@@ -177,80 +177,19 @@
     </section>
     <!-- END SOLUTIONS -->
     <!-- SERVICES -->
-    <section class="section--clients__wrapper lg:mb-40" id="clients">
+    <section class="section--clients__wrapper lg:mb-40" id="clients ">
       <div class="container mx-auto px-4">
-        <h3 class="mb-10 text-white text-center" data-aos="fade-up">{{ $t('index.title-clients')}}</h3>
+        <h3
+          class="mb-20 mt-48 text-white text-center text-4xl"
+          data-aos="fade-up"
+        >{{ $t('index.title-services')}}</h3>
         <div class="flex flex-wrap items-center">
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <div class="flex service--wrapper flex-column z-10" data-aos="fade-up">
-              <div class="circle circle-yellow"></div>
-              <div class="service--info__wrapper">
-                <div class="service--info__off">
-                  <h3 class="text-black">Research & Design</h3>
-                  <ul>
-                    <li>
-                      <b>Services</b>
-                    </li>
-                    <li>Research & Analysis</li>
-                    <li>UX/UI Design</li>
-                    <li>Wireframes</li>
-                    <li>Interface Designs</li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <b>Technologies</b>
-                    </li>
-                    <li>Sketch</li>
-                    <li>Adobe Suite</li>
-                    <li>Invision</li>
-                    <li>AxureAI</li>
-                    <li>Prototype</li>
-                    <li>AxureAI</li>
-                    <li>Wireframes</li>
-                  </ul>
-                </div>
-                <img
-                  src="~/assets/images/forge-research-ui-ux-design.svg"
-                  class="mx-auto shadow-svg image--service"
-                  alt="Research & Design"
-                />
-                <div class="service--info__on">
-                  <h3 class="text-white">Research & Design</h3>
-                  <p
-                    class="text-white"
-                  >Track your favorite shows automatically without switching between apps.</p>
-                  <a href="#">Learn More ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <img
-              src="~/assets/images/forge-web-development.svg"
-              class="mx-auto shadow-svg"
-              alt="Web Development"
-            />
-          </div>
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <img
-              src="~/assets/images/forge-mobile-development.svg"
-              class="mx-auto shadow-svg"
-              alt="Mobile Development"
-            />
-          </div>
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <img
-              src="~/assets/images/forge-api-backend.svg"
-              class="mx-auto shadow-svg"
-              alt="Api Backend"
-            />
-          </div>
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <img src="~/assets/images/forge-devops.svg" class="mx-auto shadow-svg" alt="Devops" />
-          </div>
-          <div class="w-full lg:w-4/12 mb-6 text-center">
-            <img src="~/assets/images/forge-qa.svg" class="mx-auto shadow-svg" alt="QA" />
-          </div>
+          <UXDesign />
+          <WebDev />
+          <Mobile />
+          <Backend />
+          <DevOps />
+          <QA />
         </div>
       </div>
     </section>
@@ -265,14 +204,35 @@
               <!-- USA TIME -->
               <div class="w-full lg:w-4/12 mb-6 text-center">
                 <Clock time="10:30" color="red" data-aos="fade-right" />
+                <div>
+                  <div class="text-white text-2xl mt-10 font-sans">USA</div>
+                  <div
+                    class="text-white text-0.5xl font-thin font-sans"
+                  >499, N. Canon Drive, Suite 215</div>
+                  <div class="text-white text-0.5xl font-thin font-sans">Beverly Hills CA 90210 USA</div>
+                </div>
               </div>
               <!-- ARGENTINA TIME -->
               <div class="w-full lg:w-4/12 mb-6 text-center">
                 <Clock color="orange" data-aos="fade-up" />
+                <div>
+                  <div class="text-white text-2xl mt-10 font-sans">ARGENTINA</div>
+                  <div
+                    class="text-white text-0.5xl font-thin font-sans"
+                  >499, N. Canon Drive, Suite 215</div>
+                  <div class="text-white text-0.5xl font-thin font-sans">Beverly Hills CA 90210 USA</div>
+                </div>
               </div>
               <!-- COSTA RICA -->
               <div class="w-full lg:w-4/12 mb-6 text-center">
                 <Clock color="yellow" data-aos="fade-left" />
+                <div>
+                  <div class="text-white text-2xl mt-10 font-sans">COSTA RICA</div>
+                  <div
+                    class="text-white text-0.5xl font-thin font-sans"
+                  >499, N. Canon Drive, Suite 215</div>
+                  <div class="text-white text-0.5xl font-thin font-sans">Beverly Hills CA 90210 USA</div>
+                </div>
               </div>
             </div>
           </div>
@@ -297,11 +257,23 @@
 import Slider from "~/components/Slider.vue";
 import Clock from "~/components/Clock.vue";
 import Form from "~/components/Form.vue";
+import UXDesign from "~/components/forgeServices/UXDesign.vue";
+import WebDev from "~/components/forgeServices/WebDevelopment.vue";
+import Mobile from "~/components/forgeServices/Mobile.vue";
+import Backend from "~/components/forgeServices/Backend.vue";
+import DevOps from "~/components/forgeServices/DevOps.vue";
+import QA from "~/components/forgeServices/QA.vue";
 export default {
   components: {
     Slider,
     Clock,
     Form,
+    UXDesign,
+    WebDev,
+    Mobile,
+    Backend,
+    DevOps,
+    QA,
   },
   head() {
     return { title: this.$t("index.title") };
@@ -309,3 +281,4 @@ export default {
   transition: "page",
 };
 </script>
+
