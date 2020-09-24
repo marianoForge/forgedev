@@ -2,7 +2,7 @@
 body {
     background-color: $body-bg;
 
-    @include FontCera(1em, normal, normal);
+    @include FontCera(1em, 300, normal);
 }
 
 .shadow-svg {
@@ -45,7 +45,9 @@ h3 {
     line-height: rem-calc(48);
 }
 
-h4 {}
+h4 {
+    font-size: rem-calc(24);
+}
 
 /* PARAGRAPH */
 p {

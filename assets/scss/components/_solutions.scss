@@ -1,0 +1,38 @@
+.section--solutions__wrapper {
+    .solution--wrapper {
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 100%;
+            border-radius: 100%;
+            padding-top: 4 / 4 * 100%;
+            display: block;
+        }
+
+        &.yellow {
+            &:after {
+                background-color: $yellow;
+            }
+        }
+
+        &.dark-grey {
+            &:after {
+                background-color: $dark-gray;
+            }
+        }
+
+        &.secondary {
+            &:after {
+                background-color: $secondary;
+            }
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

@@ -1,1 +1,37 @@
+// Footer styles
+.footer {
+    &--item__wrapper {
+        p {
+            font-size: rem-calc(14);
+            letter-spacing: -0.35px;
+        }
+    }
 
+    &--item__link {
+        @apply flex items-center;
+
+        font-size: rem-calc(30);
+        letter-spacing: -0.75px;
+        color: $dark-gray;
+
+        @include transition(300ms, all);
+
+        .arrow {
+            @apply ml-3;
+
+            @include transition(300ms, all);
+
+            img {
+                width: rem-calc(13);
+            }
+        }
+
+        &:hover {
+            color: $secondary;
+
+            .arrow {
+                transform: translateX(rem-calc(10));
+            }
+        }
+    }
+}

@@ -3,7 +3,10 @@
     <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="w-full">
-          <h3 class="text-primary font-bold text-center mb-16 lg:mb-7">
+          <h3
+            class="text-primary font-bold text-center mb-16 lg:mb-7"
+            data-aos="fade-up"
+          >
             {{ $t("footer.title-footer") }}
           </h3>
         </div>

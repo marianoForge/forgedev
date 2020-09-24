@@ -116,12 +116,14 @@
       <div class="container mx-auto px-4">
         <!-- Solutions 01 -->
         <div class="flex items-center">
-          <div class="w-full mb-6 lg:w-3/6 px-10 text-center">
+          <div
+            class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper yellow"
+            data-aos="fade-right"
+          >
             <img
               src="~/assets/images/service-01.svg"
-              class="mx-auto"
+              class="mx-auto w-10/12"
               alt="Solutions 01"
-              data-aos="fade-right"
             />
           </div>
           <div class="w-full mb-6 lg:w-3/6 px-6">
@@ -136,12 +138,14 @@
         <!-- End Solutions 01 -->
         <!-- Solutions 02 -->
         <div class="flex items-center lg:flex-row-reverse">
-          <div class="w-full mb-6 lg:w-3/6 px-10 text-center">
+          <div
+            class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper dark-grey"
+            data-aos="fade-left"
+          >
             <img
               src="~/assets/images/service-iphone-01.svg"
               class="mx-auto"
               alt="Solutions 02"
-              data-aos="fade-left"
             />
           </div>
           <div class="w-full mb-6 lg:w-3/6 px-6">
@@ -156,12 +160,14 @@
         <!-- End Solutions 02 -->
         <!-- Solutions 03 -->
         <div class="flex items-center">
-          <div class="w-full mb-6 lg:w-3/6 px-10 text-center">
+          <div
+            class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper secondary"
+            data-aos="fade-right"
+          >
             <img
               src="~/assets/images/service-macbook-01.svg"
               class="mx-auto"
               alt="Solutions 03"
-              data-aos="fade-right"
             />
           </div>
           <div class="w-full mb-6 lg:w-3/6 px-6">
@@ -211,7 +217,7 @@
                   data-aos="fade-right"
                   class="mb-6"
                 />
-                <h4 class="text-white">USA</h4>
+                <h4 class="text-white font-bold">USA</h4>
                 <p class="text-white font-thin">
                   499, N. Canon Drive, Suite 215
                 </p>
@@ -220,7 +226,7 @@
               <!-- ARGENTINA TIME -->
               <div class="w-full lg:w-4/12 mb-6 text-center">
                 <Clock color="orange" data-aos="fade-up" class="mb-6" />
-                <h4 class="text-white">ARGENTINA</h4>
+                <h4 class="text-white font-bold">ARGENTINA</h4>
                 <p class="text-white font-thin">
                   499, N. Canon Drive, Suite 215
                 </p>
@@ -229,7 +235,7 @@
               <!-- COSTA RICA -->
               <div class="w-full lg:w-4/12 mb-6 text-center">
                 <Clock color="yellow" data-aos="fade-left" class="mb-6" />
-                <h4 class="text-white">COSTA RICA</h4>
+                <h4 class="text-white font-bold">COSTA RICA</h4>
                 <p class="text-white font-thin">
                   499, N. Canon Drive, Suite 215
                 </p>
