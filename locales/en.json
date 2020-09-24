@@ -20,7 +20,12 @@
     "title": "Forge English",
     "title-clients": "We Create Values for this amazing Brands",
     "title-services": "What we can do for you or your business",
+    "title-timezone": "We work 24/7, just for you!",
+    "title-form": "Get in Touch, now fdker!",
     "slider-01": "We Create Solutions."
+  },
+  "footer": {
+    "title-footer": "Let’s get in touch"
   },
   "error": {
     "404": "D'oh! 404",

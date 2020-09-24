@@ -1,36 +1,30 @@
 <template>
-  <nav>
-    <ul class="flex items-center justify-between flex-wrap px-4 mb-20">
-      <div class="items-center flex-shrink-0 mr-6">
-        <li>
-          Build
-          <span class="arrow ml-3">></span>
-        </li>
-        <small>Help you to create something</small>
-      </div>
-      <div class="items-center flex-shrink-0 mr-6">
-        <li>
-          Co-incubate
-          <span class="arrow ml-3">></span>
-        </li>
-        <small>Co-incubate an idea together</small>
-      </div>
-      <div class="ftems-center flex-shrink-0 mr-6">
-        <li>
-          Build
-          <span class="arrow ml-3">></span>
-        </li>
-        <small>Help you to create something</small>
-      </div>
-      <div class="items-center flex-shrink-0 mr-6">
-        <li>
-          Co-incubate
-          <span class="arrow ml-3">></span>
-        </li>
-        <small>Co-incubate an idea together</small>
-      </div>
-    </ul>
-  </nav>
+  <div class="flex flex-wrap mb-16">
+    <div class="w-full md:w-3/12 footer--item__wrapper">
+      <a href="#" class="footer--item_link"
+        >Build <span class="footer--item__arrow text-light-green">></span></a
+      >
+      <p>Help you to create something</p>
+    </div>
+    <div class="w-full md:w-3/12 footer--item__wrapper">
+      <a href="#" class="footer--item_link"
+        >Build <span class="footer--item__arrow text-light-green">></span></a
+      >
+      <p>Help you to create something</p>
+    </div>
+    <div class="w-full md:w-3/12 footer--item__wrapper">
+      <a href="#" class="footer--item_link"
+        >Build <span class="footer--item__arrow text-light-green">></span></a
+      >
+      <p>Help you to create something</p>
+    </div>
+    <div class="w-full md:w-3/12 footer--item__wrapper">
+      <a href="#" class="footer--item_link"
+        >Build <span class="footer--item__arrow text-light-green">></span></a
+      >
+      <p>Help you to create something</p>
+    </div>
+  </div>
 </template>
 
 <script>

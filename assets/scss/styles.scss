@@ -5,10 +5,14 @@
 
 // Forge Styles
 @import "variables";
+@import "fonts";
 @import "mixins";
-@import "btn";
 @import "general";
-@import "footer";
-@import "header";
-@import "social-networks";
-@import "clock";
+
+// Components Styles
+@import "/components/btn";
+@import "/components/footer";
+@import "/components/header";
+@import "/components/social-networks";
+@import "/components/clock";
+@import "/components/services";

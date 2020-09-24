@@ -1,6 +1,8 @@
 /*MAIN FEATURED WRAPPER*/
 body {
     background-color: $body-bg;
+
+    @include FontCera(1em, normal, normal);
 }
 
 .shadow-svg {
@@ -8,51 +10,44 @@ body {
     filter: drop-shadow(10px 30px 40px rgba(0, 0, 0, 1));
 }
 
-/*SERVICES*/
-.service--wrapper {
-    @apply relative;
-
-    /*Colors*/
-    .circle {
-        @apply rounded-full z-0 absolute;
-
-        width: 100%;
-        padding-top: 4 / 4 * 100%;
-
-        &.circle-yellow {
-            background-color: $dark-yellow;
-        }
-
-        &.circle-blue {
-            background-color: $blue;
-        }
-
-        &.circle-green {
-            background-color: $green;
-        }
-
-        &.circle-light-green {
-            background-color: $light-green;
-        }
-
-        &.circle-orange {
-            background-color: $dark-orange;
-        }
-
-        &.circle-red {
-            background-color: $red;
-        }
+/* TEXT COLORS */
+.text {
+    &-primary {
+        color: $primary;
     }
 
-    .service--info__wrapper {
-        @apply z-10;
-
-        .service--info__off {
-            display: none;
-        }
-
-        .image--service {}
-
-        .service--info__on {}
+    &-secondary {
+        color: $secondary;
     }
+
+    &-light-green {
+        color: $light-green;
+    }
+
+    &-blue {
+        color: $blue;
+    }
+}
+
+/* HGROUPS */
+h1 {}
+
+h2 {
+    font-size: rem-calc(200);
+    letter-spacing: -5px;
+    line-height: rem-calc(180);
+    letter-spacing: -5px;
+}
+
+h3 {
+    font-size: rem-calc(40);
+    letter-spacing: -1px;
+    line-height: rem-calc(48);
+}
+
+h4 {}
+
+/* PARAGRAPH */
+p {
+    font-size: rem-calc(18);
 }
