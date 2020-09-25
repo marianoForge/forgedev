@@ -1,47 +1,58 @@
-.service--wrapper {
-    @apply relative;
+.service {
+    &--wrapper {
+        @apply relative;
 
-    /*Colors*/
-    .circle {
-        @apply rounded-full z-0 absolute;
+        /*Colors*/
+        .circle {
+            @apply rounded-full z-0 absolute;
 
-        width: 100%;
-        padding-top: 4 / 4 * 100%;
+            width: 100%;
+            padding-top: 4 / 4 * 100%;
 
-        &-yellow {
-            background-color: $dark-yellow;
+            &-yellow {
+                background-color: $dark-yellow;
+            }
+
+            &-blue {
+                background-color: $blue;
+            }
+
+            &-green {
+                background-color: $green;
+            }
+
+            &-light-green {
+                background-color: $light-green;
+            }
+
+            &-orange {
+                background-color: $dark-orange;
+            }
+
+            &-red {
+                background-color: $red;
+            }
         }
 
-        &-blue {
-            background-color: $blue;
+        /**/
+        &__info {
+            &__off {
+                ul {
+                    li {
+                        position: relative;
+                        overflow: hidden;
+
+                        span {
+                            transform: translateY(-100%);
+                        }
+                    }
+                }
+            }
         }
 
-        &-green {
-            background-color: $green;
+        /**/
+        &__image {
+            max-width: 100%;
         }
-
-        &-light-green {
-            background-color: $light-green;
-        }
-
-        &-orange {
-            background-color: $dark-orange;
-        }
-
-        &-red {
-            background-color: $red;
-        }
-    }
-
-    .service--info__wrapper {
-        @apply z-10;
-
-        .service--info__off {
-            display: none;
-        }
-
-        .image--service {}
-
-        .service--info__on {}
     }
 }

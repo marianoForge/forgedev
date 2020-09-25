@@ -254,7 +254,7 @@
           {{ $t("index.title-form") }}
         </h3>
         <div class="w-full lg:w-7/12 mx-auto">
-          <Form />
+          <Form data-aos="fade-up" />
         </div>
       </div>
     </section>
@@ -290,4 +290,3 @@ export default {
   transition: "page",
 };
 </script>
-

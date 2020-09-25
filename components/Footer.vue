@@ -15,9 +15,9 @@
       <footer-nav />
       <!-- end Footer Nav-->
       <!-- Social networks -->
-      <social-networks />
+      <social-networks data-aos="fade-up" />
       <!-- end Social networks -->
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-up">
         <p class="font-thin">201, Dev Arc, SG Road, Ahmedabad</p>
         <p class="font-thin">380015, Gujarat, India</p>
       </div>

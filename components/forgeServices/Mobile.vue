@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full lg:w-4/12 mt-5 pt-2 pr-40 text-center">
-    <div class="flex service--wrapper flex-column z-10" data-aos="fade-up">
-      <!-- <div class="circle circle-yellow"></div> -->
-      <div class="service--info__wrapper" style="width:400px" ;>
-        <div class="service--info__off">
+  <div class="w-full lg:w-4/12 text-center">
+    <div class="flex service--wrapper flex-column" data-aos="fade-up">
+      <div class="circle circle-green"></div>
+      <div class="service--wrapper__info">
+        <div class="service--wrapper__info__off">
           <h3 class="text-black">Research & Design</h3>
           <ul>
             <li>
@@ -29,17 +29,17 @@
         </div>
         <img
           src="~/assets/images/forge-mobile-development.svg"
-          class="mx-auto shadow-svg w-20 pb-2"
+          class="mx-auto shadow-svg service--wrapper__image"
           alt="Mobile Development"
         />
-        <div class="service--info__on pt-2">
-          <h3 class="text-white mt-4 text-xl">Research & Design</h3>
-          <p class="text-white font-thin text-0.5xl">Track your favorite shows</p>
-          <p class="text-white font-thin text-0.5xl">automatically without switching</p>
-          <p class="text-white font-thin text-0.5xl">between apps.</p>
-
-          <p class="pt-4">
-            <a href="#" style="color: #1bcac4">Learn More ></a>
+        <div class="service--wrapper__info__on">
+          <h3 class="text-white font-bold">Research & Design</h3>
+          <p class="text-white font-thin">
+            Track your favorite shows automatically without switching between
+            apps.
+          </p>
+          <p>
+            <a href="#">Learn More ></a>
           </p>
         </div>
       </div>

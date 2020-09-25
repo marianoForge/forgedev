@@ -5,6 +5,14 @@
                 width: 25px;
                 height: auto;
                 fill: black;
+
+                @include transition(all, 300ms);
+            }
+
+            &:hover {
+                svg {
+                    fill: $secondary;
+                }
             }
         }
     }
