@@ -122,7 +122,7 @@
           >
             <img
               src="~/assets/images/service-01.svg"
-              class="mx-auto w-10/12"
+              class="mx-auto w-10/12 shadow-svg"
               alt="Solutions 01"
             />
           </div>
@@ -144,7 +144,7 @@
           >
             <img
               src="~/assets/images/service-iphone-01.svg"
-              class="mx-auto"
+              class="mx-auto shadow-svg"
               alt="Solutions 02"
             />
           </div>
@@ -166,7 +166,7 @@
           >
             <img
               src="~/assets/images/service-macbook-01.svg"
-              class="mx-auto"
+              class="mx-auto shadow-svg"
               alt="Solutions 03"
             />
           </div>
