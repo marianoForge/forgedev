@@ -1,5 +1,6 @@
 <template>
   <header class="navbar p-3">
+    <div class="container mx-auto">
     <nav class="flex items-center justify-between flex-wrap px-3">
       <div class="flex items-center flex-shrink-0 mr-6">
         <logo data-aos="fade-up" />
@@ -20,8 +21,7 @@
         </button>
       </div>
       <transition name="menu">
-        <div
-          data-aos="fade-left"
+        <div          
           class="w-full flex-grow lg:block lg:flex lg:items-center lg:w-auto header--menu__wrapper"
           :class="{ open: isShowing }"
         >
@@ -54,6 +54,7 @@
         </div>
       </transition>
     </nav>
+    </div>
   </header>
 </template>
 <script>

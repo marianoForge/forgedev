@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 209 123">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 203 160">
+  <defs/>
   <defs>
     <path id="a" d="M0 0h154.705v97.337H0z"/>
     <path id="e" d="M.166 3.405s2.116 1.892 8.107 2.392h186.454s4.97-.335 8.194-2.31H4.864L.166 3.406z"/>
@@ -24,9 +25,9 @@
     </filter>
   </defs>
   <g fill="none" fill-rule="evenodd">
-    <path fill="#5F7AFF" d="M27.994.28A5.994 5.994 0 0022 6.274v104.768h165V6.274A6 6 0 00181.006.28H27.994z"/>
-    <path stroke="#5F7AFF" stroke-width="2" d="M23 112h163V5.996A5 5 0 00181.006 1H27.994A4.993 4.993 0 0023 5.996V112z"/>
-    <g transform="translate(27.287 7.272)">
+    <path fill="#5F7AFF" d="M24.994 21.28A5.994 5.994 0 0019 27.274v104.768h165V27.274a6 6 0 00-5.994-5.994H24.994z"/>
+    <path stroke="#5F7AFF" stroke-width="2" d="M178.006 22a4.98 4.98 0 013.53 1.465 4.979 4.979 0 011.464 3.53h0V133H20V26.996c0-1.38.559-2.63 1.462-3.533A4.979 4.979 0 0124.994 22h0z"/>
+    <g transform="translate(24.287 28.272)">
       <mask id="b" fill="#fff">
         <use xlink:href="#a"/>
       </mask>
@@ -35,17 +36,17 @@
         <tspan x="37.313" y="54.728">WWW.</tspan>
       </text>
     </g>
-    <g transform="translate(103 3)">
+    <g transform="translate(100 24)">
       <circle cx="1.5" cy="1.5" r="1.5" fill="url(#c)"/>
       <circle cx="1.5" cy="1.5" r="1" fill="#103470"/>
     </g>
     <g>
-      <g transform="translate(3 111)">
+      <g transform="translate(0 132)">
         <use fill="#000" filter="url(#d)" xlink:href="#e"/>
         <use fill="url(#f)" xlink:href="#e"/>
       </g>
-      <path fill="#5771F3" d="M3.279 111H206v3.5H3.279z"/>
-      <g transform="translate(3 111)">
+      <path fill="#5771F3" d="M.279 132H203v3.5H.279z"/>
+      <g transform="translate(0 132)">
         <use fill="#4F66D9" xlink:href="#g"/>
         <use fill="#000" filter="url(#h)" xlink:href="#g"/>
       </g>

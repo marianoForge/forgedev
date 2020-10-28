@@ -60,7 +60,7 @@
         <use xlink:href="#i"/>
       </mask>
       <use fill="#FFF" fill-rule="nonzero" xlink:href="#i"/>
-      <image width="583.985" height="800.894" y=".39" mask="url(#j)" xlink:href="~/assets/images/service-01.webp"/>
+      <image width="583.985" height="800.894" y=".39" mask="url(#j)" xlink:href="service-01.webp"/>
     </g>
     <path d="M27.603 301.719h583.985v52.439H27.603z"/>
   </g>

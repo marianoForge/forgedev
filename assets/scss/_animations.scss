@@ -1,0 +1,9 @@
+@keyframes transformYText {
+    0%,60% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

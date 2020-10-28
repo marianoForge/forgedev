@@ -1,13 +1,21 @@
 /*MAIN FEATURED WRAPPER*/
 body {
     background-color: $body-bg;
+    overflow-x: hidden;
 
     @include FontCera(1em, 300, normal);
 }
 
 .shadow-svg {
-    -webkit-filter: drop-shadow(10px 30px 40px rgba(0, 0, 0, 1));
-    filter: drop-shadow(10px 30px 40px rgba(0, 0, 0, 1));
+    -webkit-filter: drop-shadow(5px 15px 20px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(5px 15px 20px rgba(0, 0, 0, 0.8));
+}
+
+@media (min-width: 768px) {
+    .shadow-svg {
+        -webkit-filter: drop-shadow(10px 24px 32px rgba(0, 0, 0, 0.8));
+        filter: drop-shadow(10px 24px 24px rgba(0, 0, 0, 0.8));
+    }
 }
 
 /* TEXT COLORS */
@@ -33,16 +41,15 @@ body {
 h1 {}
 
 h2 {
-    font-size: rem-calc(200);
-    letter-spacing: -5px;
-    line-height: rem-calc(180);
-    letter-spacing: -5px;
+    font-size: rem-calc(65);
+    letter-spacing: -2px;
+    line-height: rem-calc(65);
 }
 
 h3 {
-    font-size: rem-calc(40);
+    font-size: rem-calc(24);
     letter-spacing: -1px;
-    line-height: rem-calc(48);
+    line-height: rem-calc(24);
 }
 
 h4 {
@@ -52,4 +59,29 @@ h4 {
 /* PARAGRAPH */
 p {
     font-size: rem-calc(18);
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: rem-calc(200);
+        letter-spacing: -5px;
+        line-height: rem-calc(180);
+    }
+
+    h3 {
+        font-size: rem-calc(40);
+        letter-spacing: -1px;
+        line-height: rem-calc(48);
+    }
+
+    h4 {
+        font-size: rem-calc(24);
+    }
+}
+
+/*BG*/
+.bg {
+    &-primary {
+        background-color: $primary;
+    }
 }

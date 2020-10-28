@@ -1,18 +1,18 @@
 <template>
   <div class="main-content">
     <!-- SLIDER / MAIN IMAGE -->
-    <section class="section--slider__wrapper lg:mb-40" id="index">
+    <section class="section--slider__wrapper mb-20 lg:mb-40" id="index">
       <div class="container mx-auto px-4">
-        <div class="flex mb-4">
+        <div class="flex flex-wrap mb-4">
           <div class="w-full md:w-6/12">
             <!-- SLIDER -->
             <Slider />
             <!-- END SLIDER -->
           </div>
-          <div class="w-6/12">
-            <img
+          <div class="w-full lg:w-6/12">
+            <img data-aos="fade-left"
               src="~/assets/images/forge-main-image.svg"
-              alt="We Create Solutions - Forge"
+              alt="We Create Solutions - Forge" 
               class="md:w-4/12 w-full relative md:absolute right-0"
             />
           </div>
@@ -21,7 +21,7 @@
     </section>
     <!-- END SLIDER / MAIN IMAGE -->
     <!-- CLIENTS -->
-    <section class="section--clients__wrapper lg:mb-40" id="clients">
+    <section class="section--clients__wrapper mb-20 lg:mb-40" id="clients">
       <div class="container mx-auto px-4">
         <h3 class="mb-10 text-white text-center font-bold" data-aos="fade-up">
           {{ $t("index.title-clients") }}
@@ -112,10 +112,10 @@
     </section>
     <!-- END CLIENTS -->
     <!--  SOLUTIONS -->
-    <section class="section--solutions__wrapper lg:mb-40" id="solutions">
+    <section class="section--solutions__wrapper mb-10 lg:mb-30" id="solutions">
       <div class="container mx-auto px-4">
         <!-- Solutions 01 -->
-        <div class="flex items-center">
+        <div class="flex flex-wrap items-center mb-10">
           <div
             class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper yellow"
             data-aos="fade-right"
@@ -137,7 +137,7 @@
         </div>
         <!-- End Solutions 01 -->
         <!-- Solutions 02 -->
-        <div class="flex items-center lg:flex-row-reverse">
+        <div class="flex flex-wrap items-center lg:flex-row-reverse mb-10">
           <div
             class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper dark-grey"
             data-aos="fade-left"
@@ -159,7 +159,7 @@
         </div>
         <!-- End Solutions 02 -->
         <!-- Solutions 03 -->
-        <div class="flex items-center">
+        <div class="flex flex-wrap items-center mb-10">
           <div
             class="w-full mb-6 lg:w-3/6 px-10 text-center solution--wrapper secondary"
             data-aos="fade-right"
@@ -184,12 +184,12 @@
     </section>
     <!-- END SOLUTIONS -->
     <!-- SERVICES -->
-    <section class="section--clients__wrapper lg:mb-40" id="clients">
+    <section class="section--clients__wrapper mb-20 lg:mb-40" id="clients">
       <div class="container mx-auto px-4">
         <h3 class="mb-20 text-white text-center font-bold" data-aos="fade-up">
           {{ $t("index.title-services") }}
         </h3>
-        <div class="flex flex-wrap items-center">
+        <div class="flex flex-wrap">
           <UXDesign />
           <WebDev />
           <Mobile />
@@ -201,7 +201,7 @@
     </section>
     <!-- END SERVICES -->
     <!-- TIME -->
-    <section class="section--timezone__wrapper lg:mb-40" id="timezone">
+    <section class="section--timezone__wrapper mb-20 lg:mb-40" id="timezone">
       <div class="container mx-auto px-4">
         <h3 class="mb-16 text-white text-center font-bold" data-aos="fade-up">
           {{ $t("index.title-timezone") }}
@@ -248,7 +248,7 @@
     </section>
     <!-- END TIME -->
     <!-- FORM -->
-    <section class="section--clients__wrapper lg:mb-40" id="quote">
+    <section class="section--clients__wrapper mb-20 lg:mb-40" id="quote">
       <div class="container mx-auto px-4">
         <h3 class="mb-10 text-white text-center font-bold" data-aos="fade-up">
           {{ $t("index.title-form") }}

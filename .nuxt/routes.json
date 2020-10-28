@@ -2,15 +2,15 @@
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/fernandopoli/Google Drive/Forge/webiste/pages/index.vue",
+    "component": "/Applications/MAMP/htdocs/ForgeWebsite/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_7d11b86b"
+    "_name": "_53ffe9f2"
   },
   {
     "name": "lang",
     "path": "/:lang",
-    "component": "/Users/fernandopoli/Google Drive/Forge/webiste/pages/_lang/index.vue",
+    "component": "/Applications/MAMP/htdocs/ForgeWebsite/pages/_lang/index.vue",
     "chunkName": "pages/_lang/index",
-    "_name": "_b1b1b22e"
+    "_name": "_10dc1485"
   }
 ]

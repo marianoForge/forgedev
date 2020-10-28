@@ -1,10 +1,10 @@
 .service {
     &--wrapper {
-        @apply relative;
+        @apply relative mb-12;
 
         /*Colors*/
         .circle {
-            @apply rounded-full z-0 absolute;
+            @apply rounded-full mx-auto transition-all duration-300  ease-in-out;
 
             width: 100%;
             padding-top: 4 / 4 * 100%;
@@ -35,17 +35,41 @@
         }
 
         /**/
+        &__image {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70px;
+
+            @apply absolute z-10 top-0 mx-auto transition-all duration-300  ease-in-out;
+        }
+
         &__info {
             &__off {
+                @apply absolute top-0 h-full w-full flex flex-col justify-center items-center;
+
+                h3 {
+                    font-size: rem-calc(24);
+                    letter-spacing: 0;
+
+                    span {
+                        @apply block transition-all duration-300  ease-in-out delay-300;
+                    }
+                }
+
                 ul {
                     li {
-                        position: relative;
-                        overflow: hidden;
-
                         span {
-                            transform: translateY(-100%);
+                            @apply block transition-all duration-1000  ease-in-out delay-1000;
                         }
                     }
+                }
+            }
+
+            &__on {
+                @apply hidden;
+
+                h3 {
+                    font-size: rem-calc(24);
                 }
             }
         }
@@ -53,6 +77,107 @@
         /**/
         &__image {
             max-width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .service {
+        &--wrapper {
+            @apply mb-24 relative;
+
+            /*Circle*/
+            .circle {
+                max-width: 160px;
+                padding-top: 160px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                @apply absolute;
+            }
+
+            /**/
+            &__image {
+                left: initial;
+                top: initial;
+                margin: -2% auto initial;
+                height: 170px;
+                transform: translate(0%, 0);
+
+                @apply relative z-10;
+            }
+
+            &__info {
+                &__off {
+                    @apply hidden mt-10 absolute;
+
+                    h3 {
+                        overflow: hidden;
+
+                        span {
+                            animation: transformYText 600ms;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            overflow: hidden;
+
+                            span {
+                                animation: transformYText 600ms;
+                            }
+                        }
+                    }
+                }
+
+                &__on {
+                    @apply block;
+                }
+            }
+
+            //hover
+            &:hover {
+                z-index: 9999;
+
+                .circle {
+                    @apply rounded-full w-full;
+
+                    transform: translateX(-50%) scale(1.1);
+                    padding-top: 4 / 4 * 100%;
+                    max-width: 100%;
+                }
+
+                .service--wrapper {
+                    &__info {
+                        &__off {
+                            @apply block;
+
+                            h3 {
+                                span {
+                                    transform: translateY(0%);
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    span {
+                                        transform: translateY(0%);
+                                    }
+                                }
+                            }
+                        }
+
+                        &__on {
+                            @apply hidden;
+                        }
+                    }
+
+                    &__image {
+                        margin-top: -45px;
+                        height: 90px;
+                    }
+                }
+            }
         }
     }
 }
